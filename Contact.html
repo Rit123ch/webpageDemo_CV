@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Tom">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My Contract Info.">
+        <title>My Contract Info.</title>
+    </head>
+
+    <body>
+        <h1>My Contract Info</h1>
+        <p>Tel: 674839023</p>
+        <p>Email: eeeeeeee@gmail.com</p>
+        <hr>
+
+
+        <!--Define a form type what should into the form-->
+
+        <!--action="FirstIndex.html": 当提交表单时，发送表单数据到名为 "FirstIndex.html" 的文件（处理输入）-->
+        <!--<form class="" action="FirstIndex.html" method="post">-->
+
+        <!--action="mailto:xx@gmail.com": 当提交表单时，发送表单数据發到xx@gmail.com-->
+        <!--Since this webpage using utf-8 as encoded type, let to change the encoded type for Email-->
+        <!--<form action="mailto:xx@gmail.com" method="post" enctype="text/plain">-->
+   
+        <form action="mailto:ritchietou892@gmail.com" method="post" enctype="text/plain"> 
+
+            <!-- attribute values of "type":
+            text   Default. Defines a single-line text field
+            submit Defines a submit button
+            file   Defines a file-select field and a "Browse" button (for file uploads)
+            date   Defines a date control (year, month, day (no time)) 
+            radio  Defines a radio button
+            range  Defines a range control (like a slider control) 
+            color  Defines a color picker
+            email  Defines a field for an e-mail address
+            Other references: https://www.w3schools.com/tags/att_input_type.asp -->
+
+            <!--attributes "name": 控件的名称, "id": 规定 HTML 元素的唯一的 id " value":用户输入(或选择)的值-->
+            <!--Can have the same "name", "id" always be uniqued-->
+
+            <label>Your Name:</label>
+            <input type="text" name="yourName" value=""><br>
+            <label>Email:</label>
+            <input type="email" name="yourEmail" value=""><br>
+            <label>Your Message:</label><br>
+            <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+            <input type="submit" name="" value="submit"> 
+
+        </form>
+    </body>
+</html>

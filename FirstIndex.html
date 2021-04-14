@@ -1,0 +1,125 @@
+<!--In VSCode: 安装插件: open in browser
+    使用它的方式有alt+b运行；或者切换alt+shift+b切换不同浏览器运行；并且可以运行多个界面 -->
+<!DOCTYPE html> <!--HTML5-->
+<html>
+    <head>
+        <!--attributes for meta Tag-->
+        <!--meta elements give extra metedata or associated data to the HTML document-->
+        <!--charset: Specifies the character encoding for the HTML document-->
+        <!--name: Specifies a name for the metadata-->
+        <!--http-equiv: Provides an HTTP header for the information/value of the content attribute-->
+        <!--content: Specifies the value associated with the http-equiv or name attribute-->
+        
+        <!--Text Content in this webpage is encoding with Utf-8-->
+        <meta charset="utf-8"> 
+        <!--Define keywords for search engines-->
+        <meta name="keywords" content="Personal Site, Webpage"> 
+        <!--Define the author of a page-->
+        <meta name="author" content="Tom"> 
+        <!--Define a description of your web page:-->
+        <meta name="description" content="This is a fake Personal Site for testing demo">
+        <!--Setting the viewport to make your website look good on all devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Refresh document every 30 second
+        <meta http-equiv="refresh" content="30"> -->
+
+        <!--Unicode contains Emojis, Find those elements by typing "Unicode Character Table" in the browser-->
+        <title>🥰Tom's Perosnal Site</title>
+    </head>
+
+    <body>
+        <table cellspacing="20"> <!--Set cell spacing = 20px-->
+            <tr>
+                <td>
+                    <!--image can either be URL or local image that has included in the same directory as website-->
+                    <!--src 属性是必须的，它包含了你想嵌入的图片的文件路径。-->
+                    <!--alt 属性包含一条对图像的文本描述，这不是强制性的,
+                    如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本-->
+                    <img src="Image_doraemon.png" alt=" Profile Image "> 
+                </td>
+                <td>
+                    <h1>Tom</h1> <!--Level 1 Heading-->
+                    <!--Paragraph Type: 
+                     p 元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定-->   
+                    <!--Good pratice to always use Emphasis to instead of Italic-->
+                    <!--Good pratice to always use Strong to instead of Bold-->
+                    <!--Writing HTML more care about structure our text rather than how it looks or appears-->
+                    <P></P><em>student in <strong>University of Macau</strong></em></p>
+                    <p>I am a student who studing Computer Science. I love to drink coffee and watch youtube</p>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Subjects have been studied</h3><!--Level 3 Heading-->
+        <ul>
+            <li>Object-Oriented Programming</li>
+            <li>Data Structure</li>
+            <li>Algorithm</li>
+            <li>AI</li>
+        </ul>
+        <hr>
+        <h3>Working Experience</h3>
+        <!--Default: a table without any borders or boundaries, outline, bg-color, align...etc. 
+            Although could apply those attributes of table Tag to style them, it is not recommend to do so
+            suggest to use CSS to style them-->
+        <!--Attributes for table Tag: <NOT RECOMMEND to IMPLEMENT>
+            border 定义了表格边框的大小
+            cellpadding 定义了表格单元的内容和边框之间的空间
+            cellspacing 定义了两个单元格之间空间的大小-->
+        <!--A table contains header, body and footer-->
+        <table>  
+            <thead>
+                <tr> <!--Table Row-->
+                    <th>Dates</th> <!--<th> 元素定义表格内的表头单元格, Table Header Cell-->
+                    <th>Work</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2010-2013</td> <!--Table Data or Tabel Cell-->
+                    <td>PartTime Investigator</td>
+                </tr>
+                <tr>
+                    <td>2014-2018</td>
+                    <td>PartTime Saler</td>
+                </tr>
+            </tbody>   
+            <tfoot>
+                <!--<tr><th></th><th></th></tr>-->
+            </tfoot>        
+        </table>
+        <hr>
+        <h1>Skills</h1>
+        <table  border="1px"> <!--Using Table Nested Structure and attributes for table Tag-->
+            <tr>
+                <td>
+                    <table  cellspacing="10px">
+                        <tr>
+                            <td>iOS development</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>photography</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                    </table>
+                </td>           
+                <td>
+                    <table cellspacing="10px">
+                        <tr>
+                            <td>web development</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>painting</td>
+                            <td>⭐⭐</td>
+                        </tr>
+                    </table>
+                </td>           
+            </tr>
+        </table>    
+        <hr>
+        <a href="Hobbies.html">My hobbies</a> <!--Link to another HTML Document-->
+        <a href="Contact.html">Contract Info.</a>
+    </body>
+</html>
